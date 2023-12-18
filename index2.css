@@ -1,0 +1,11 @@
+.menu {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.menu > li {
+    display: inline-block;
+
+    background-color: black;
+}
