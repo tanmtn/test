@@ -1,0 +1,49 @@
+<!-- - 변형: 요소의 어쩌구저쩌구ㅏ어리ㅏㅁ넝리ㅏ먼ㅇㄹ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>변형과 전환</title>
+
+        <style>
+            .parent {
+                display: inline-block;
+                margin: 0 20px;
+                font-size: 0; /* 공백 제거 */
+            }
+
+            .child {
+                width: 150px;
+                height: 150px;
+                background-color: teal;
+            }
+
+            .parent:nth-child(1) > .child {
+                transform: translate(30px, 50px);
+            }
+            .parent:nth-child(2) > .child {
+                transform: scale(1.2, 0.8);
+            }
+            .parent:nth-child(3) > .child {
+                transform: skew(45deg);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+        <div class="parent1">
+            <div class="child"></div>
+        </div>
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </body>
+</html>
